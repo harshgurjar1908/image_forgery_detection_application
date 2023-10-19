@@ -1,0 +1,19 @@
+.body {
+  margin: 0;
+}
+.resultimages {
+  display: flex;
+}
+
+.org,
+.ela {
+  height: auto;
+  margin: 100px;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+}

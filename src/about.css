@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+.about {
+  height: 250vh;
+  background-image: linear-gradient(to bottom, rgb(10, 7, 20), rgb(1, 1, 47));
+  /* border: 2px solid green; */
+}
+.abouttitle {
+  display: inline-flex;
+  color: aliceblue;
+  /* border: 2px solid yellow; */
+  position: relative;
+  left: 150vh;
+  margin-left: 10px;
+
+  
+
+}
+.aboutmaintitle {
+  font-size: 5rem;
+  /* font-size: 80px; */
+  line-height: 0.9;
+  padding: 20px;
+  font-family: 'Syncopate', sans-serif;
+  text-transform: uppercase;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    white,
+    #111
+  ) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}

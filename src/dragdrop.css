@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+.file {
+  /* border: 2px solid green; */
+  width: 20vh;
+  height: auto;
+  margin-top: 20vh;
+  margin-left: 20vh;
+}
+
+.proceed-btn {
+  position: relative;
+  margin: 10vh;
+  height: 6vh;
+  width: 12vh;
+  left: -5vh;
+  background-color: beige;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.proceed-btn:hover {
+  transform: scale(1.2);
+  background: linear-gradient(to right, rgb(250, 46, 80), #fbff00, green);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+.reset-btn {
+  position: absolute;
+  margin: 10vh;
+  height: 6vh;
+  width: 12vh;
+  top: 220px;
+  left: 40vh;
+  background-color: beige;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.reset-btn:hover {
+  transform: scale(1.2);
+  background: linear-gradient(to right, rgb(250, 46, 80), #fbff00, green);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
