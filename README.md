@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Image Forgery Detection Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Image Forgery Detection Application, a project that combines the power of deep learning and React to help you detect image forgeries quickly and efficiently. This project is divided into two parts: the frontend and the backend. The frontend is developed in React and provides an intuitive user interface for uploading images, while the backend is built with Flask and performs image forensics using Error Level Analysis (ELA) to determine if an image is forged or not.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Upload images for forgery detection.
+- Real-time feedback on image authenticity.
+- Sleek single-page scrolling design.
+- Integration of GSAP and ScrollTrigger for smooth animations.
+- React Router for navigation.
+- Material UI components for a modern look and feel.
 
-### `npm start`
+## Frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The frontend of this project is built using React, a popular JavaScript library for building user interfaces. It provides an interactive and user-friendly interface for uploading images. When you upload an image, the React app sends it to the Flask backend, which performs ELA analysis. The result (forged or not forged) is then displayed on the webpage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend Technologies
 
-### `npm test`
+- React
+- Axios for HTTP requests
+- GSAP for animations
+- ScrollTrigger for smooth scrolling animations
+- React Router for navigation
+- Material UI for styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend Setup
 
-### `npm run build`
+1. Clone this repository.
+2. Navigate to the `frontend` directory.
+3. Run `npm install` to install the required dependencies.
+4. Start the development server with `npm start`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The backend of this project is built using Flask, a Python web framework. It receives the uploaded image, performs ELA analysis, and sends the result back to the frontend.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend Technologies
 
-### `npm run eject`
+- Flask
+- Pillow for image processing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Navigate to the [`backend`](https://drive.google.com/drive/folders/1TRFa-IgBrRrV-Vb2yyUiktYvh3rwpquv?usp=sharing) directory.
+2. Create a Python virtual environment.
+3. Install the required packages using `pip install -r requirements.txt`.
+4. Start the Flask server with `python main.py`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How it Works
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Visit the application in your web browser.
+2. Upload an image using the provided interface.
+3. The React frontend will send the image to the Flask backend.
+4. The Flask server will perform ELA analysis on the image to determine its authenticity.
+5. The result (forged or not forged) is sent back to the frontend and displayed on the webpage.
 
-## Learn More
+## Demo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can check out a live demo of the Image Forgery Detection Application [here](#).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+The project structure is organized as follows:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+image-forgery-detection-app/
+├── frontend/            # React frontend
+│   ├── src/assets/
+│   ├── public/
+│   
+├── backend/             # Flask backend
+│   ├── main.py
+│   ├── model/model.h5
+|   ├── requirements.txt
+```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Thank you for using the Image Forgery Detection Application! If you have any questions or feedback, please don't hesitate to reach out.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Enjoy detecting image forgeries with ease!**
